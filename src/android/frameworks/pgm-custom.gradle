@@ -179,10 +179,10 @@ android {
 
   buildTypes {
     debug {
-      manifestPlaceholders.GOOGLE_MAPS_ANDROID_API_KEY = props.getProperty("GOOGLE_MAPS_ANDROID_API_KEY")
+      manifestPlaceholders = [GOOGLE_MAPS_ANDROID_API_KEY:props.getProperty("GOOGLE_MAPS_ANDROID_API_KEY")]
     }
     release {
-      manifestPlaceholders.GOOGLE_MAPS_ANDROID_API_KEY = props.getProperty("GOOGLE_MAPS_ANDROID_API_KEY")
+      manifestPlaceholders = [GOOGLE_MAPS_ANDROID_API_KEY:props.getProperty("GOOGLE_MAPS_ANDROID_API_KEY")]
     }
   }
 }
